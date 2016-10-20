@@ -1,0 +1,31 @@
+{
+  "name": "heroku-json-server-ready",
+  "version": "1.0.0",
+  "description": "Heroku Ready-REST API",
+  "description": "A sample Node.js app using Express 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "json-server": "^0.8.21",
+    "glob": "^7.0.5"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "ejs": "1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jagadeeshthegeek/heroku-json-server-ready"
+  },
+  "keywords": [
+    "node",
+    "json-server"
+  ],
+  "author": "Mark Pundsack",
+  "contributors": [
+    "Jagadeesh"
+  ],
+  "license": "MIT"
+}

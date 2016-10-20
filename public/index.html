@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>JSON Server</title>
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+<div class="container">
+
+
+    <div class="jumbotron">
+        <h1>REST-API</h1>
+
+        <p>REST -Server is Up & Running.</p>
+
+
+        <br/>
+
+        <hr>
+
+        <h4>Routes</h4>
+
+        <p>
+        <ul id="resources">loading, please wait...</ul>
+        </p>
+
+        <p>
+            Local DB:
+        <ul>
+            <li>
+                <a href="db">db</a>
+            </li>
+        </ul>
+        </p>
+
+    </div>
+
+
+    <p>
+        You can use any HTTP verbs (GET, POST, PUT, PATCH and DELETE) and access your resources from anywhere
+        using CORS and JSONP.
+    </p>
+
+</div>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.0.0.min.js"
+        integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $.get('db').then(function (data) {
+            $('#resources').empty();
+            $.each(data, function (key, value) {
+                $('#resources')
+                        .append('<li><a href="' + key + '">' + key + '</a></li>');
+            })
+        })
+    })
+</script>
+</body>
+</html>

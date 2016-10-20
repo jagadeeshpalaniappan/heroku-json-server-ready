@@ -1,0 +1,7 @@
+{
+  "name": "REST Server",
+  "description": "REST Server --Heroku Ready",
+  "repository": "https://github.com/jagadeeshthegeek/heroku-json-server-ready",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "json-server"]
+}

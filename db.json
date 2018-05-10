@@ -1,5 +1,6 @@
 {
-  "rooms": [],
-  "memberships": [],
-  "messages": []
+  "groups": [],
+  "users": [],
+  "stores": [],
+  "todos": []
 }
